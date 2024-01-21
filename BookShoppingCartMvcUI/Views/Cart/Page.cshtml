@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmation Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .confirmation-container {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 400px;
+        }
+
+        .confirmation-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation-container">
+        <!-- Remplacez le chemin de l'image par le vôtre -->
+        <img src="/images/pngtree-confirmation-check-mark-vector-icon-agree-design-good-vector-png-image_46120202.jpg" class="confirmation-image" alt="Confirmation Image" />
+        <p>Your order has been confirmed. Thank you!</p>
+    </div>
+
+    <script>
+        // Attendre 10 secondes avant de rediriger vers la page d'accueil
+        setTimeout(function () {
+            window.location.href = "/Home/Index"; // Remplacez "/path-to-home-page" par le chemin de votre page d'accueil
+        }, 5000); // 10000 millisecondes équivalent à 10 secondes
+    </script>
+</body>
+</html>

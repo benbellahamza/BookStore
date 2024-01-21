@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+    // Supposons que vous ayez des données de livre disponibles dans le ViewBag
+    var bookImage = ViewBag.BookImage as string;
+    var bookDetails = ViewBag.BookDetails as string;
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <img src="@bookImage" alt="Book Image" style="width: 200px; height: 300px;" />
+    <p>@bookDetails</p>
+</div>
